@@ -5,14 +5,15 @@
  * This program calculates the cost of bolts, nuts and washers purchased
  */
 
+// Constants
+const BOLT_COST = 10;
+const NUT_COST = 5;
+const WASHER_COST = 3;
+
 // Input
 const bolts = Number(prompt("How many bolts would you like to purchase:") || "10");
 const nuts = Number(prompt("How many nuts would you like to purchase:") || "5");
 const washers = Number(prompt("How many washers would you like to purchase:") || "10")
-
-const BOLT_COST = 10;
-const NUT_COST = 5;
-const WASHER_COST = 3;
 
 // Processing
 const totalCost = 
