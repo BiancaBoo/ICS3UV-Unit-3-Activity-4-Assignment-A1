@@ -2,7 +2,7 @@
  * Author: Bianca Bertinato
  * Version: 1.0.0
  * Date: 2025-11-15
- * This program calculates 
+ * This program calculates the cost of bolts, nuts and washers purchased
  */
 
 // Input
