@@ -10,16 +10,19 @@ const BOLT_COST = 10;
 const NUT_COST = 5;
 const WASHER_COST = 3;
 
-// Input
-const bolts = Number(prompt("How many bolts would you like to purchase:") || "10");
-const nuts = Number(prompt("How many nuts would you like to purchase:") || "5");
-const washers = Number(prompt("How many washers would you like to purchase:") || "10")
+// Declare variables
+let bolts: number;
+let nuts: number;
+let washers: number;
+let totalCost: number;
 
-// Processing
-const totalCost = 
-  bolts * BOLT_COST +
-  nuts * NUT_COST +
-  washers * WASHER_COST;
+// Input
+bolts = Number(prompt("How many bolts would you like to purchase:") || "10");
+nuts = Number(prompt("How many nuts would you like to purchase:") || "5");
+washers = Number(prompt("How many washers would you like to purchase:") || "10")
+
+// Process
+totalCost = bolts * BOLT_COST + nuts * NUT_COST + washers * WASHER_COST;
 
 // Output
 console.log("Number of bolts:         ", bolts);

@@ -12,34 +12,36 @@ import (
 )
 
 func main() {
-	// Constants
-	const BOLT_COST int = 10
-	const NUT_COST int = 5
-	const WASHER_COST int = 3
 
-	// Inputs
+	// Constants
+	const BOLT_COST = 10
+	const NUT_COST = 5
+	const WASHER_COST = 3
+
+	// Declare variables
 	var bolts int
 	var nuts int
 	var washers int
+	var totalCost int
 
+	// Input
 	fmt.Print("How many bolts would you like to purchase: ")
-	fmt.Scan(&bolts)
+	fmt.Scanln(&bolts)
 
 	fmt.Print("How many nuts would you like to purchase: ")
-	fmt.Scan(&nuts)
+	fmt.Scanln(&nuts)
 
 	fmt.Print("How many washers would you like to purchase: ")
-	fmt.Scan(&washers)
+	fmt.Scanln(&washers)
 
-	// Processing
-	totalCost := bolts*BOLT_COST + nuts*NUT_COST + washers*WASHER_COST
+	// Process
+	totalCost = bolts*BOLT_COST + nuts*NUT_COST + washers*WASHER_COST
 
 	// Output
 	fmt.Println("Number of bolts:         ", bolts)
 	fmt.Println("Number of nuts:          ", nuts)
 	fmt.Println("Number of washers:       ", washers)
 
-	// Decision statements
 	if bolts > nuts {
 		fmt.Println("Check the Order - not enough nuts for the bolts you purchased.")
 	} else if washers < bolts {
